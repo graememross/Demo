@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Git tutorial - Glasgow University Tech Society - 2014-11-08</title>
+                <!--link rel="stylesheet" type="text/css" href="styles.css" /-->
+        </head>
+        <body>
+                <h1 id="top">Glasgow University Tech Society - Git tutorial</h1>
+                <ul>
+						<li><a href="#why">Why use a Source Code Repository</a></li>
+                        <li><a href="#github_account">Setting up github account</a></li>
+                        <li><a href="#creating_project">Creating github project</a></li>
+                        <li><a href="#tortoise_git">Setting up tortoise git</a></li>
+                        <li><a href="#group_work">Trying group work</a></li>
+                        <!--li><a href="#git_advanced">More advanced git features</a></li-->
+                </ul>
+				<br>
+				<a href="#top">Top</a>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+				<h2 id="why">Why use a Source Code Repository</h2>
+				<p>Some of the reasons for using source code repository are
+					<ul>
+						<li> Preserve code to allow rollback
+						<li> Allows indentification of changes between versions
+						<li> Allows collaboration between more than one developer
+						<li> Allows code to be preserved on a seperate system to protect against disaster
+						<li> ....
+					</ul>
+				</p>
+				<h2> Why GIT? </h2>
+				<p> GIT is only one amongst many Source Code repository tools. They all have their advantages/disadvantages.
+				</p>
+				<p> Some of the features of GIT are
+				<ul>
+				<li> Distributed Repository 
+				<ul><li>multiple copies of the data at different locations
+				<li> Manual control of when copies of the repository are updated
+				<li> Full control of revisions within the local repository
+				</ul>
+				<li> Powerful branching mechanism
+				<li> Very powerful - "With great power comes ...... "
+				</ul>
+				</p>
+				
+				<br>
+				<a href="#top">Top</a>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+                <h2 id="github_account">Setting up github account</h2>
+                <p>You need to create a github account to get a free place to keep source code for your open-source projects. <a href="http://github.com">github.com</a>. The process is straightforward and guided by github.
+                </p>
+                <img src="signup.jpg" style="width:600px"></img>
+				
+				<br>
+				<a href="#top">Top</a>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+                <h2 id="creating_project">Creating github project</h2>
+                <p>
+                After you log in, you need to create a git repository to be able to collaborate with your team. You need only one project per team, but just to practice everybody can create one now.
+                </p>
+                <img src="create_repo.jpg" style="width:600px"></img>
+                <h3>Repository's URL</h3>
+                <p>
+                You need to copy your repository's URL, to use your project with Tortoise Git.
+                </p>
+                <img src="copy_address.jpg" style="width:600px"></img>
+				
+				<br>
+				<a href="#top">Top</a>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			
+                <h2 id="tortoise_git">Setting up TortoiseGit</h2>
+                <p>
+                To install follow the instructions at <a href="https://code.google.com/p/tortoisegit/">code.google.com/p/tortoisegit</a>
+                </p>
+                <h3>Cloning Step 1</h3>
+                <p>
+                You can then clone the repository you have created.
+                </p>
+                <img src="cloneStep1.jpg" style="width:600px"></img>
+                <h3>Cloning Step 2</h3>
+                <p>
+                You'll have to use the URL you have created.
+                </p>
+                <img src="cloneStep2.jpg" style="width:600px"></img>
+                
+				<br>
+				<a href="#top">Top</a>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+				<h2 id="group_work">The workflow</h2>
+                TortoiseGit drop-down you've seen before has got a few useful options: commit, pull and push. Graeme will explain how all of them work, and give you a task, which will boil down to:
+                <ul>
+                    <li>Using one of your team's repositories to collaborate on</li>
+                    <li>adding a non-conflicting file to the repository (for example using your own name), commiting it and pushing it</li>
+                    <li>Resolving an expected conflict by applying a merge</li>
+                    <li>Trying to modify one of your friends files by resolving merge conflicts</li>
+                </ul>
+				<p>
+				<b>Steps:</b>
+				<ol>
+				<li> Using TortoiseGit (or equivalent on your OS or GIT Bash) clone the repository set up on GitHub by one of team members.
+				<li> Create a file in your local clone of the repository. Call it <br>
+				<tt>	
+				&lt;username&gt;.txt
+				</tt>
+				<li> Edit the file and place a line of text in the file "Hello World from &lt;username&gt;"
+				<li> Add the file to your local repository
+				<li> Commit the file into your local repository
+				<li> In turns within your team
+				<ul>
+					<li> Push your local repository up to the remote repository
+					<li>After the first person has pushed the second person will get an error
+					<li>To resolve this error pull the remote repository down again and then push
+				</ul>
+				<li> Everyone in the team should now do a pull from the remote repository
+				<li> Within the team pick one of the files that has been created 
+				<li> Everyone in the team edit the file and add the line "Hello World from &lt;username&gt;"
+				<li> Commit this change into your local repository
+				<ul>
+					<li> Push your local repository up to the remote repository
+					<li> After the first person has pushed the second person will get an error
+					<li> To resolve this error pull the remote repository down again
+					<li> This time you get what is known as a conflict 
+					<li> Using TortoiseGit Edit and resolve the conflict 
+					<li> Push the resolved file back to the remote repository
+					<li> Repeat for all team members
+				
+				</ul>
+				<li> Quick demonstration of branching
+				</ol>
+				</p>
+				
+				
+				<br>
+				<a href="#top">Top</a>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <body>
+<html>
